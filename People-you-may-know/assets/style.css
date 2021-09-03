@@ -147,9 +147,7 @@ body {
   overflow: hidden;
   margin-left: 5px;
 }
-.card-item:not([class=".same-friend-tooltip"]) {
-  overflow: visible;
-}
+
 .card-item__content {
   display: flex;
   flex-direction: column;
@@ -221,11 +219,11 @@ body {
   position: absolute;
   width: 100px;
   height: fit-content;
-  top: 19px;
+  top: 17px;
   left: 41px;
   border-radius: 8px;
   text-align: left;
-  padding: 10px;
+  padding: 9px 10px 9px 10px;
   color: white;
   font-size: 1.3rem;
   z-index: 4;
