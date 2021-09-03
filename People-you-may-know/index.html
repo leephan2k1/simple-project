@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b0ed091ff5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/base.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>People you may know - Facebook</title>
+  </head>
+  <body>
+    <!-- main frame -->
+    <div class="carousel">
+      <div class="nav-icon next-icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="nav-icon previous-icon">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <!-- title -->
+      <div class="carousel-title">
+        <span class="carousel-title__content">Những người bạn có thể biết</span>
+        <div class="btn-option">
+          <div class="carousel-title__icon">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <!-- dropdown-option -->
+          <div class="dropdown-option">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/friends"
+              class="dropdown-option__content"
+            >
+              <img
+                class="option-icon"
+                src="./assets/img/friends.svg"
+                alt="friends"
+              />
+              <span class="first dropdown-option__text">Xem tất cả gợi ý</span>
+            </a>
+            <a href="#" id="hide-all" class="dropdown-option__content">
+              <img
+                class="option-icon close"
+                src="./assets/img/cancel.svg"
+                alt="friends"
+              />
+              <span class="dropdown-option__text"
+                >Ẩn những người bạn có thể biết</span
+              >
+            </a>
+          </div>
+          <!-- dropdown-option -->
+        </div>
+      </div>
+      <!-- title -->
+
+      <!-- slide  -->
+      <ul class="carousel__slide">
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt="close"
+              />
+            </div>
+            <!-- img  -->
+            <img
+              class="ci-content__img"
+              src="./assets/img/Chino.jpg"
+              alt="img"
+            />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Chino-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat (1).jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge (3).jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">2 bạn chung</span>
+              <div class="same-friend-tooltip">
+                <p>Gâu Gâu</p>
+                <p>Meow Meow</p>
+              </div>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- load data from local storage-->
+    <script src="JS/loadData.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
