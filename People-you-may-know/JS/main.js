@@ -51,11 +51,11 @@ let position = 0;
 prevBtn.onclick = function () {
   position += width * count;
   //Khi chạm tới đầu, reset về 0
-  if (position == 0)
+  position = Math.min(position, 0);
+  if (position === 0)
     setTimeout(function () {
       prevBtn.style.display = "none";
     }, 1000);
-  position = Math.min(position, 0);
   //margin-left của ul tăng lên
   //<=> "khung nhìn" lùi ra trước
   list.style.marginLeft = position + "px";
