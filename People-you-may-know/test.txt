@@ -1,0 +1,308 @@
+
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <!-- img  -->
+            <img class="ci-content__img" src="./assets/img/cat-2.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Neko-kun</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/doge-4.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">3 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/doge.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Inu-kun</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">2 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/doge-2.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Doge-kun</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">2 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/doge-3.png" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Cheems-kun</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">3 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/cat.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Chino-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">2 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/cat.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Chino-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">2 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/cat.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Neko-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">1 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/cat.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Chino-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">4 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="card-item__content">
+            <!-- remove item  -->
+            <div class="remove-card">
+              <img
+                class="remove-icon"
+                src="./assets/img/211652_close_icon.svg"
+                alt=""
+              />
+            </div>
+            <img class="ci-content__img" src="./assets/img/cat.jpg" alt="" />
+            <!-- item name  -->
+            <p class="offset-item-card card-item_name">Chino-chan</p>
+            <!-- same friends  -->
+            <div class="same-friends-row offset-item-card">
+              <img
+                class="same-friends--first same-friends"
+                src="./assets/img/cat.jpg"
+                alt="cat"
+              />
+              <img
+                class="same-friends same-friends--second"
+                src="assets/img/doge-2.jpg"
+                alt="dog"
+              />
+              <span class="same-friends-count">1 bạn chung</span>
+            </div>
+            <!-- add friends button  -->
+            <button class="add-friend-button">
+              <i class="fas fa-user-plus"></i>
+              <span class="add-friend-title">Thêm bạn bè</span>
+            </button>
+          </div>
+        </li>
