@@ -327,6 +327,8 @@ btnBack.onclick = function () {
   btnBack.style.display = "none";
   btnStHandle.style.display = "none";
   btnStReset.style.display = "none";
+  const toggle = btnStHandle.querySelector(".fas");
+  toggle.classList.remove("fa-pause");
   $(".play").style.display = "none";
   inputElements.forEach((elem) => {
     elem.style.display = "none";
