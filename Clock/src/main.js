@@ -114,8 +114,7 @@ function timer(resumTimer, timeArr, stateCircle) {
   timeArr = resumTimer.timeArr;
   //Handle count down
   //Borrow stopwatch button :>
-  btnStHandle.style.display = "flex";
-  btnStReset.style.display = "flex";
+
   $(".play").style.display = "none";
   let sumCountDown = +timeArr[2] + +timeArr[1] * 60 + +timeArr[0] * 3600;
 
@@ -176,6 +175,10 @@ function timer(resumTimer, timeArr, stateCircle) {
           ),
         1000
       );
+      handleInput();
+      //update 6.15pm
+      btnStHandle.style.display = "none";
+      btnStReset.style.display = "none";
     }
     sumCountDown--;
   }, 1000);
@@ -320,7 +323,7 @@ btnStopwatch.onclick = function () {
 };
 
 //handle back to main
-btnBack.onclick = function () {
+function backToMain() {
   if (countDown_interval) {
     // console.log("test clear timer interval");
     clearInterval(countDown_interval);
@@ -340,14 +343,17 @@ btnBack.onclick = function () {
     elem.style.display = "none";
   });
   callTime();
+}
+btnBack.onclick = function () {
+  backToMain();
 };
 
 //Handle Timer
-btnTimer.onclick = function () {
-  const inputElements = $$(".wrapper-input");
-  const plusBtns = $$(".plus");
-  const minusBtns = $$(".minus");
-  const btnPlay = $(".play");
+const inputElements = $$(".wrapper-input");
+const plusBtns = $$(".plus");
+const minusBtns = $$(".minus");
+const btnPlay = $(".play");
+function handleInput() {
   resetTime(circle, timeText, handHour, handMinute);
   clearInterval(interval_Time);
   forTimer = true;
@@ -358,7 +364,6 @@ btnTimer.onclick = function () {
   inputElements.forEach((elem) => {
     elem.style.display = "flex";
   });
-
   plusBtns.forEach((btn) => {
     btn.onmousedown = function () {
       const parent = btn.closest(".wrapper-input");
@@ -375,12 +380,19 @@ btnTimer.onclick = function () {
       if (input.value > 0) input.value--;
     };
   });
-
+}
+btnTimer.onclick = function () {
+  handleInput();
+  // btnStHandle.style.display = "flex";
+  // btnStReset.style.display = "flex";
   let timeArr = [];
   let isValid;
 
   btnPlay.onclick = function () {
     //i think this block code not yet optimize, but it's working :D @auth: LEE
+    //update ver 69 ? :D ?: 6.12pm
+    btnStHandle.style.display = "flex";
+    btnStReset.style.display = "flex";
     const ipHour = $("#ipHour");
     const ipMinute = $("#ipMinute");
     const ipSecond = $("#ipSecond");
