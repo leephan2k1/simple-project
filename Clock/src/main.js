@@ -311,12 +311,12 @@ btnStopwatch.onclick = function () {
     clearInterval(stopwatch_interval);
     play = false;
     const toggle = btnStHandle.querySelector(".fas");
-
+    console.log(toggle);
     if (!toggle.classList.contains("fa-play")) {
       toggle.classList.add("fa-play");
     }
     if (toggle.classList.contains("fa-pause")) {
-      toggle.classList.remove("fa-play");
+      toggle.classList.remove("fa-pause");
     }
     // toggle.classList.toggle("fa-pause");
   };
