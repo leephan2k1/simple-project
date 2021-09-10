@@ -158,7 +158,7 @@ function timer(resumTimer, timeArr, stateCircle) {
     if (run_time_circle < 600) run_time_circle += percent;
     stateCircle.state = run_time_circle;
     //step
-    console.log(sumCountDown);
+    // console.log(timeArr);
     if (sumCountDown === 0) {
       clearInterval(countDown_interval);
       //delay 1s
@@ -279,18 +279,25 @@ btnStopwatch.onclick = function () {
   btnBack.style.display = "flex";
   btnStHandle.style.display = "flex";
   btnStReset.style.display = "flex";
+  const toggle = btnStHandle.querySelector(".fas");
+  toggle.classList.add("fa-play");
+
   //handle play:
   let play = false;
   btnStHandle.onclick = function () {
+    // console.log("stopwatch test");
     if (!play) play = true;
     else play = false;
-    const toggle = btnStHandle.querySelector(".fas");
-    toggle.classList.toggle("fa-play");
-    toggle.classList.toggle("fa-pause");
 
+    // toggle.classList.remove("fa-play");
+    // console.log(toggle);
     if (play) {
+      toggle.classList.toggle("fa-play");
+      toggle.classList.toggle("fa-pause");
       stopWatch(objTime);
     } else {
+      toggle.classList.toggle("fa-pause");
+      toggle.classList.toggle("fa-play");
       clearInterval(stopwatch_interval);
     }
   };
@@ -308,7 +315,10 @@ btnStopwatch.onclick = function () {
 
 //handle back to main
 btnBack.onclick = function () {
-  if (countDown_interval) clearInterval(countDown_interval);
+  if (countDown_interval) {
+    // console.log("test clear timer interval");
+    clearInterval(countDown_interval);
+  }
   if (stopwatch_interval) clearInterval(stopwatch_interval);
   const inputElements = $$(".wrapper-input");
   btnStopwatch.remove();
@@ -330,10 +340,9 @@ btnTimer.onclick = function () {
   const plusBtns = $$(".plus");
   const minusBtns = $$(".minus");
   const btnPlay = $(".play");
-
   resetTime(circle, timeText, handHour, handMinute);
   clearInterval(interval_Time);
-
+  forTimer = true;
   btnTimer.remove();
   btnStopwatch.remove();
   btnBack.style.display = "flex";
@@ -408,11 +417,11 @@ btnTimer.onclick = function () {
     toggle.classList.add("fa-pause");
     //Play/pause
     btnStHandle.onclick = function () {
+      // console.log("timer test");
       if (play) play = false;
       else play = true;
       toggle.classList.toggle("fa-play");
       toggle.classList.toggle("fa-pause");
-
       if (!play) {
         clearInterval(countDown_interval);
       } else {
@@ -421,12 +430,16 @@ btnTimer.onclick = function () {
     };
     //Reset
     btnStReset.onclick = function () {
+      const toggle = btnStHandle.querySelector(".fas");
+      toggle.classList.remove("fa-pause");
+      toggle.classList.add("fa-play");
       toggle.classList.toggle("fa-play");
       toggle.classList.toggle("fa-pause");
       const temp = [...resultTimer];
+      play = true;
+      clearInterval(countDown_interval);
       timer({ timeArr: temp }, temp, { state: 0, percent: 0 });
     };
   };
 };
-
 callTime();
