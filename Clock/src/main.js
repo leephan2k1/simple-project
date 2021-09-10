@@ -390,9 +390,6 @@ btnTimer.onclick = function () {
 
   btnPlay.onclick = function () {
     //i think this block code not yet optimize, but it's working :D @auth: LEE
-    //update ver 69 ? :D ?: 6.12pm
-    btnStHandle.style.display = "flex";
-    btnStReset.style.display = "flex";
     const ipHour = $("#ipHour");
     const ipMinute = $("#ipMinute");
     const ipSecond = $("#ipSecond");
@@ -413,6 +410,10 @@ btnTimer.onclick = function () {
     }
     // console.log(isValid);
     if (isValid) {
+      //update 6.28pm 10/9/2021
+      btnStHandle.style.display = "flex";
+      btnStReset.style.display = "flex";
+      // console.log(isValid);
       inputElements.forEach((elem) => {
         elem.style.display = "none";
       });
