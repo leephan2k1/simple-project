@@ -299,6 +299,10 @@ btnStopwatch.onclick = function () {
     objTime.hour = objTime.minute = objTime.second = objTime.runner = 0;
     resetTime(circle, timeText, handHour, handMinute);
     clearInterval(stopwatch_interval);
+    play = false;
+    const toggle = btnStHandle.querySelector(".fas");
+    toggle.classList.toggle("fa-play");
+    toggle.classList.toggle("fa-pause");
   };
 };
 
