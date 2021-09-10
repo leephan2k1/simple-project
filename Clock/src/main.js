@@ -294,12 +294,14 @@ btnStopwatch.onclick = function () {
       clearInterval(stopwatch_interval);
     }
   };
+  //Handle reset stopwatch
+  btnStReset.onclick = function () {
+    objTime.hour = objTime.minute = objTime.second = objTime.runner = 0;
+    resetTime(circle, timeText, handHour, handMinute);
+    clearInterval(stopwatch_interval);
+  };
 };
-//Handle reset stopwatch
-btnStReset.onclick = function () {
-  objTime.hour = objTime.minute = objTime.second = objTime.runner = 0;
-  resetTime(circle, timeText, handHour, handMinute);
-};
+
 //handle back to main
 btnBack.onclick = function () {
   if (countDown_interval) clearInterval(countDown_interval);
