@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://kit.fontawesome.com/b0ed091ff5.js" crossorigin="anonymous"></script>
+    <title>Clock</title>
+  </head>
+  <body>
+      <div class="wrapper-clock">
+        <div class="circle-clock">
+        <div class="hand-hour"></div>
+        <div class="hand-minute"></div>
+        <!-- <div class="hand-second"></div> -->
+          <div class="wrapper-progress">
+            <svg class="fill" width="205" height="205">
+              <defs>
+                <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#F56C0C" />
+                  <stop offset="100%" stop-color="#FB8E09" />
+                </linearGradient>
+              </defs>
+              <circle
+                class="fill-circle progress-time"
+                cx="103"
+                cy="102"
+                r="95"
+                stroke="url(#linear)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="time-text">
+        </div>
+        </div>
+        <div class="wrapper-function">
+          <div class="btn stopwatch-handle">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="btn stopwatch-reset"><i class="fas fa-undo"></i>
+          </div>
+          <div class="btn stopwatch-function">
+            <i class="fas fa-stopwatch"></i>
+            <span class="btn-text">Stopwatch</span>
+          </div>
+          <div class="btn timer-function">
+            <i class="fas fa-hourglass-half"></i>
+            <span class="btn-text">Timer</span>
+          </div>
+
+          <div class="wrapper-input">
+            <!-- input hour -->
+            <div class="btnNav plus"><i class="fas fa-plus"></i></div>
+            <input class="inputTime" id="ipHour" name="ipHour" type="number" value="00" min="0"/>
+            <div class="btnNav minus"><i class="fas fa-minus"></i></div>
+            <span style="font-size:1.5rem" class='btn-text'>h</span>
+          </div>
+          <div class="wrapper-input">
+            <!-- input minute  -->
+            <div class="btnNav plus"><i class="fas fa-plus"></i></div>
+            <input class="inputTime" id="ipMinute" name="ipMinute" type="number"value="00" min="0" />
+            <div class="btnNav minus"><i class="fas fa-minus"></i></div>
+            <span style="font-size:1.5rem" class='btn-text'>m</span>
+          </div>
+          
+          <div class="wrapper-input">
+            <!-- input second  -->
+            <div class="btnNav plus"><i class="fas fa-plus"></i></div>
+              <input class="inputTime" id="ipSecond" name ="ipSecond" type="number" value="00"/>
+            <div class="btnNav minus"><i class="fas fa-minus"></i></div>
+            <span style="font-size:1.5rem" class='btn-text'>s</span>
+          </div>
+
+        </div>
+        <div class="back">
+          <i class="fas fa-long-arrow-alt-left"></i>
+          <span class="btn-text back-text">Back</span>
+        </div>
+        <div class="play">
+          <i class="fas fa-play"></i>
+        </div>
+        
+      </div>
+      <script src="./src/main.js"></script>
+    </main>
+    <footer>
+      <a href="https://github.com/leephan2k1" class="icon-footer"><i class="fab fa-github"></i></a>
+      <span style="font-size:1.5rem" class='footer'>Made with ❤ by Lee </span>
+    </footer>
+    
+  </body>
+</html>
