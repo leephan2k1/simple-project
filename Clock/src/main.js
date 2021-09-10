@@ -292,8 +292,8 @@ btnStopwatch.onclick = function () {
     // toggle.classList.remove("fa-play");
     // console.log(toggle);
     if (play) {
-      toggle.classList.toggle("fa-play");
-      toggle.classList.toggle("fa-pause");
+      toggle.classList.remove("fa-play");
+      toggle.classList.add("fa-pause");
       stopWatch(objTime);
     } else {
       toggle.classList.toggle("fa-pause");
@@ -308,8 +308,14 @@ btnStopwatch.onclick = function () {
     clearInterval(stopwatch_interval);
     play = false;
     const toggle = btnStHandle.querySelector(".fas");
-    toggle.classList.toggle("fa-play");
-    toggle.classList.toggle("fa-pause");
+
+    if (!toggle.classList.contains("fa-play")) {
+      toggle.classList.add("fa-play");
+    }
+    if (toggle.classList.contains("fa-pause")) {
+      toggle.classList.remove("fa-play");
+    }
+    // toggle.classList.toggle("fa-pause");
   };
 };
 
