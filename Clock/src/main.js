@@ -424,8 +424,8 @@ btnTimer.onclick = function () {
       //optimize time number
       timeArr[1] += Math.floor(+timeArr[2] / 60);
       timeArr[0] += Math.floor(+timeArr[1] / 60);
-      if (timeArr[1] > 60) timeArr[1] -= 60;
-      if (timeArr[2] > 60) timeArr[2] -= 60;
+      if (timeArr[1] >= 60) timeArr[1] -= 60;
+      if (timeArr[2] >= 60) timeArr[2] -= 60;
       resultTimer = [...timeArr];
       resumTimer = { timeArr: timeArr };
       stateCircle = { state: 0, percent: 0 };
