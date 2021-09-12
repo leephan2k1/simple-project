@@ -206,7 +206,7 @@ function callTime() {
     let hour = date.getHours();
     let halfDay = "AM";
     //Xu li gio 24h -> AM PM
-    if (hour > 11 && date.getMinutes() > 0) {
+    if (hour > 11) {
       hour = date.getHours() - 12;
       halfDay = "PM";
     }
