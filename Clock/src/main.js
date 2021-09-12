@@ -209,8 +209,6 @@ function callTime() {
     if (hour > 11 && date.getMinutes() > 0) {
       hour = date.getHours() - 12;
       halfDay = "PM";
-    } else {
-      halfDay = "AM";
     }
     let percentHour = Math.floor(date.getMinutes() / 12) * 6;
     if (percentHour === 30) {
