@@ -43,6 +43,11 @@ function handleTimeText(number, id) {
     case 1:
       if (number > 60) number = 1;
       break;
+    case 2:
+      while (number > 60) {
+        number -= 60;
+      }
+      break;
   }
   return number <= 9 ? "0" + number : number;
 }
@@ -60,7 +65,7 @@ function stopWatch(objSaveTime) {
 
     //fix text:
     secondText = handleTimeText(secondText, 1);
-    minuteText = handleTimeText(minuteText, 1);
+    minuteText = handleTimeText(minuteText, 2);
     hourText = handleTimeText(hourText, 2);
 
     //reder text
